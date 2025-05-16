@@ -4,6 +4,7 @@
 
 git config --global pull.ff only
 git config --global core.editor nano
+git config --global merge.conflictstyle diff3
 
 :: Aliases
 git config --global --replace-all alias.conf "config --global --replace-all"
