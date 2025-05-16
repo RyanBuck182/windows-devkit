@@ -1,4 +1,6 @@
 :: Open this repo in visual studio code
 
 @echo off
-code %~dp0..
+cd %~dp0
+cd ..
+code .
