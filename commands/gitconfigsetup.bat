@@ -32,6 +32,7 @@ git conf alias.sw "switch"
 git conf alias.swc "switch -c"
 
 git conf alias.b "branch"
+git conf alias.bl "branch --sort=-committerdate"
 
 git conf alias.pl "pull"
 git conf alias.pl "pull --rebase"
