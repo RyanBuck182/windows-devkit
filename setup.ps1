@@ -1,9 +1,10 @@
+# Add the commands to the PATH environment variable
+
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $commandsFolder = Join-Path $scriptDir "commands"
 
 $currentPATH = [Environment]::GetEnvironmentVariable("PATH", "User")
 
-# Check if the path is already in PATH (case-insensitive)
 if ($currentPATH.Split(';') -contains $commandsFolder) {
     Write-Output "'$commandsFolder' is already in PATH."
 } else {
