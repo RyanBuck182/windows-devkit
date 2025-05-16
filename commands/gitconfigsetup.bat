@@ -2,7 +2,7 @@
 
 @echo off
 
-git config --global pull.rebase true
+git config --global pull.ff only
 git config --global core.editor nano
 
 :: Aliases
@@ -31,3 +31,4 @@ git conf alias.swc "switch -c"
 git conf alias.b "branch"
 
 git conf alias.pl "pull"
+git conf alias.pl "pull --rebase"
