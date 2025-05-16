@@ -1,2 +1,6 @@
+:: Open this repo in file explorer
+
 @echo off
-start %~dp0
+cd %~dp0
+cd ..
+start .
