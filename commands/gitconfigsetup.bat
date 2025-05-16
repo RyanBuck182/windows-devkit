@@ -5,6 +5,7 @@
 git config --global pull.ff only
 git config --global core.editor nano
 git config --global merge.conflictstyle diff3
+git config --global init.defaultBranch main
 
 :: Aliases
 git config --global --replace-all alias.conf "config --global --replace-all"
@@ -33,3 +34,6 @@ git conf alias.b "branch"
 
 git conf alias.pl "pull"
 git conf alias.pl "pull --rebase"
+
+git conf alias.ps "push"
+git conf alias.psu "push -u origin"
