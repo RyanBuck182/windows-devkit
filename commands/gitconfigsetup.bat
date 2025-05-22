@@ -2,6 +2,12 @@
 
 @echo off
 
+if exist "..\.batenv" (
+    call "..\.batenv"
+    git config --global user.name "%GIT_USER_NAME%"
+    git config --global user.email "%GIT_USER_EMAIL%"
+)
+
 git config --global pull.ff only
 git config --global core.editor nano
 git config --global merge.conflictstyle diff3

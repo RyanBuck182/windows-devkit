@@ -1,0 +1,7 @@
+:: Basically an env file but easier for a batch file to work with
+
+:: Duplicate the file, remove the .template from the end of the file name,
+:: then change the following values:
+
+set GIT_USER_NAME=your git name
+set GIT_USER_EMAIL=your git email
