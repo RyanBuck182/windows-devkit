@@ -2,8 +2,8 @@
 
 @echo off
 
-if exist "..\.batenv" (
-    call "..\.batenv"
+if exist "..\.env.bat" (
+    call "..\.env.bat"
     git config --global user.name "%GIT_USER_NAME%"
     git config --global user.email "%GIT_USER_EMAIL%"
 )

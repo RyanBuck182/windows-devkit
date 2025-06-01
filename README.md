@@ -1,5 +1,6 @@
 # Hello!
 
-These are some helpful command shortcuts I made for myself. Clone the repo and run `setup.bat` to use them yourself.
+These are some helpful command shortcuts I made for myself.
 
-Make sure to follow the instructions in the .batenv
+Clone the repo, run `setup.bat`, and follow the instructions in
+`.env.bat.template` to use them yourself.
