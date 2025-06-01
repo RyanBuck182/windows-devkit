@@ -46,6 +46,12 @@ git aliasconfig alias.fp "fetch --prune"
 git aliasconfig alias.pl "pull"
 git aliasconfig alias.ps "push"
 
+git aliasconfig alias.sh "stash"
+git aliasconfig alias.shs "stash show"
+git aliasconfig alias.shps "stash push"
+git aliasconfig alias.shop "stash pop"
+git aliasconfig alias.sha "stash apply"
+
 :: Branch list by last commit
 git aliasconfig alias.bl "branch --sort=-committerdate"
 
