@@ -16,36 +16,36 @@ git config --global diff.algorithm histogram
 git config --global diff.colorMoved default
 
 :: Aliases
-git config --global --replace-all alias.conf "config --global --replace-all"
+git config --global --replace-all alias.aliasconfig "config --global --replace-all"
 
-git conf alias.s "status"
+git aliasconfig alias.s "status"
 
-git conf alias.c "commit"
-git conf alias.cm "commit -m"
-git conf alias.ca "commit --amend"
-git conf alias.cam "commit --amend -m"
+git aliasconfig alias.c "commit"
+git aliasconfig alias.cm "commit -m"
+git aliasconfig alias.ca "commit --amend"
+git aliasconfig alias.cam "commit --amend -m"
 
-git conf alias.a "add"
+git aliasconfig alias.a "add"
 
-git conf alias.d "diff"
-git conf alias.ds "diff --staged"
+git aliasconfig alias.d "diff"
+git aliasconfig alias.ds "diff --staged"
 
-git conf alias.l "log --oneline"
-git conf alias.lg "log --oneline --graph"
+git aliasconfig alias.l "log --oneline"
+git aliasconfig alias.lg "log --oneline --graph"
 
-git conf alias.rs "restore --staged"
+git aliasconfig alias.rs "restore --staged"
 
-git conf alias.sw "switch"
-git conf alias.swc "switch -c"
+git aliasconfig alias.sw "switch"
+git aliasconfig alias.swc "switch -c"
 
-git conf alias.b "branch"
-git conf alias.bl "branch --sort=-committerdate"
+git aliasconfig alias.b "branch"
+git aliasconfig alias.bl "branch --sort=-committerdate"
 
-git conf alias.f "fetch"
-git conf alias.fp "fetch --prune"
+git aliasconfig alias.f "fetch"
+git aliasconfig alias.fp "fetch --prune"
 
-git conf alias.pl "pull"
-git conf alias.plff "-c pull.ff=true pull"
+git aliasconfig alias.pl "pull"
+git aliasconfig alias.plff "-c pull.ff=true pull"
 
-git conf alias.ps "push"
-git conf alias.psu "push -u origin"
+git aliasconfig alias.ps "push"
+git aliasconfig alias.psu "push -u origin"
