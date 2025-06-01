@@ -54,3 +54,18 @@ git aliasconfig alias.bl "branch --sort=-committerdate"
 
 :: Pushing a new branch
 git aliasconfig alias.psu "push -u origin"
+
+:: Reset to HEAD (the last commit)
+git aliasconfig alias.r-to-head "reset --hard HEAD"
+
+:: Reset to a specific commit
+git aliasconfig alias.r-to-commit "reset --hard"
+
+:: Restore all staged files
+git aliasconfig alias.ra-staged "restore --staged *"
+
+:: Restore all modified files
+git aliasconfig alias.ra-modified "restore *"
+
+:: Remove all untracked files
+git aliasconfig alias.ra-untracked "clean -fd"
