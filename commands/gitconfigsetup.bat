@@ -45,7 +45,7 @@ git conf alias.f "fetch"
 git conf alias.fp "fetch --prune"
 
 git conf alias.pl "pull"
-git conf alias.pl "pull"
+git conf alias.plff "-c pull.ff=true pull"
 
 git conf alias.ps "push"
 git conf alias.psu "push -u origin"
