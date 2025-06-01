@@ -45,12 +45,12 @@ git aliasconfig alias.fp "fetch --prune"
 git aliasconfig alias.pl "pull"
 git aliasconfig alias.ps "push"
 
+:: Branch list by last commit
+git aliasconfig alias.bl "branch --sort=-committerdate"
+
 :: Pull with merge/rebase
 git aliasconfig alias.plm "-c pull.ff=true pull"
 git aliasconfig alias.plr "-c pull.ff=true pull --rebase"
-
-:: Branch list by last commit
-git aliasconfig alias.bl "branch --sort=-committerdate"
 
 :: Pushing a new branch
 git aliasconfig alias.psu "push -u origin"
