@@ -41,6 +41,11 @@ git aliasconfig alias.swc "switch -c"
 git aliasconfig alias.b "branch"
 git aliasconfig alias.bl "branch --sort=-committerdate"
 
+git aliasconfig alias.mg "merge"
+
+git aliasconfig alias.rb "rebase"
+git aliasconfig alias.rbi "rebase -i"
+
 git aliasconfig alias.f "fetch"
 git aliasconfig alias.fp "fetch --prune"
 
