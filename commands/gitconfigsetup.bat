@@ -39,6 +39,8 @@ git aliasconfig alias.sw "switch"
 git aliasconfig alias.swc "switch -c"
 
 git aliasconfig alias.b "branch"
+
+:: Branch list by last commit
 git aliasconfig alias.bl "branch --sort=-committerdate"
 
 git aliasconfig alias.mg "merge"
@@ -50,7 +52,12 @@ git aliasconfig alias.f "fetch"
 git aliasconfig alias.fp "fetch --prune"
 
 git aliasconfig alias.pl "pull"
-git aliasconfig alias.plff "-c pull.ff=true pull"
+
+:: Pull with merge/rebase
+git aliasconfig alias.plm "-c pull.ff=true pull"
+git aliasconfig alias.plr "-c pull.ff=true pull --rebase"
 
 git aliasconfig alias.ps "push"
+
+:: Pushing a new branch
 git aliasconfig alias.psu "push -u origin"
