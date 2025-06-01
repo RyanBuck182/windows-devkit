@@ -1,11 +1,12 @@
 :: My preferred configuration options for git.
 
 @echo off
+setlocal enabledelayedexpansion
 
 if exist "..\.env.bat" (
     call "..\.env.bat"
-    git config --global user.name "%GIT_USER_NAME%"
-    git config --global user.email "%GIT_USER_EMAIL%"
+    git config --global user.name "!GIT_USER_NAME!"
+    git config --global user.email "!GIT_USER_EMAIL!"
 )
 
 git config --global pull.ff only
