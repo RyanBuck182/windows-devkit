@@ -22,14 +22,17 @@ git config --global --replace-all alias.aliasconfig "config --global --replace-a
 git aliasconfig alias.s "status"
 git aliasconfig alias.a "add"
 git aliasconfig alias.ap "add -p"
-git aliasconfig alias.d "diff"
-git aliasconfig alias.ds "diff --staged"
 git aliasconfig alias.rs "restore --staged"
 
 git aliasconfig alias.c "commit"
 git aliasconfig alias.cm "commit -m"
 git aliasconfig alias.ca "commit --amend"
 git aliasconfig alias.cam "commit --amend -m"
+
+git aliasconfig alias.d "diff"
+git aliasconfig alias.ds "diff --staged"
+git aliasconfig alias.dc "diff --color-words"
+git aliasconfig alias.dsc "diff --staged --color-words"
 
 git aliasconfig alias.l "log --oneline"
 git aliasconfig alias.lg "log --oneline --graph"
