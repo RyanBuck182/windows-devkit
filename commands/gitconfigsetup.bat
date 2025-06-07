@@ -50,6 +50,7 @@ git aliasconfig alias.rbi "rebase -i"
 git aliasconfig alias.rbc "rebase --continue"
 git aliasconfig alias.rba "rebase --abort"
 
+git aliasconfig alias.rv "remote -v"
 git aliasconfig alias.f "fetch"
 git aliasconfig alias.fp "fetch --prune"
 git aliasconfig alias.pl "pull"
