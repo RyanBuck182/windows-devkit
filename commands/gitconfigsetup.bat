@@ -42,8 +42,13 @@ git aliasconfig alias.swc "switch -c"
 git aliasconfig alias.b "branch"
 
 git aliasconfig alias.mg "merge"
+git aliasconfig alias.mgc "merge --continue"
+git aliasconfig alias.mga "merge --abort"
+
 git aliasconfig alias.rb "rebase"
 git aliasconfig alias.rbi "rebase -i"
+git aliasconfig alias.rbc "rebase --continue"
+git aliasconfig alias.rba "rebase --abort"
 
 git aliasconfig alias.f "fetch"
 git aliasconfig alias.fp "fetch --prune"
