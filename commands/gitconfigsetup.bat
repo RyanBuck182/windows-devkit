@@ -79,10 +79,10 @@ git aliasconfig alias.r-to-head "reset --hard HEAD"
 git aliasconfig alias.r-to-commit "reset --hard"
 
 :: Restore all staged files
-git aliasconfig alias.ra-staged "restore --staged *"
+git aliasconfig alias.rs-all "restore --staged *"
 
 :: Restore all modified files
-git aliasconfig alias.ra-modified "restore *"
+git aliasconfig alias.r-all "restore *"
 
 :: Remove all untracked files
-git aliasconfig alias.ra-untracked "clean -fd"
+git aliasconfig alias.cfd "clean -fd"
