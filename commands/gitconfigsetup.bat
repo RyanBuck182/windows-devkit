@@ -3,8 +3,8 @@
 @echo off
 setlocal enabledelayedexpansion
 
-if exist "..\.env.bat" (
-    call "..\.env.bat"
+if exist "..\config.bat" (
+    call "..\config.bat"
     git config --global user.name "!GIT_USER_NAME!"
     git config --global user.email "!GIT_USER_EMAIL!"
 )
