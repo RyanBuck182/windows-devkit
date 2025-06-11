@@ -11,7 +11,7 @@ if exist "..\config.bat" (
 
 git config --global pull.ff only
 git config --global core.editor nano
-git config --global merge.conflictstyle diff3
+git config --global merge.conflictstyle zdiff3
 git config --global init.defaultBranch main
 git config --global diff.algorithm histogram
 git config --global diff.colorMoved default
