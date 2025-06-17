@@ -33,6 +33,7 @@ git aliasconfig alias.d "diff"
 git aliasconfig alias.ds "diff --staged"
 git aliasconfig alias.dc "diff --color-words"
 git aliasconfig alias.dsc "diff --staged --color-words"
+git aliasconfig alias.dl "diff HEAD~1"
 
 git aliasconfig alias.l "log --oneline"
 git aliasconfig alias.lg "log --oneline --graph"
