@@ -21,6 +21,7 @@ git config --global --replace-all alias.aliasconfig "config --global --replace-a
 
 git aliasconfig alias.s "status"
 git aliasconfig alias.a "add"
+git aliasconfig alias.au "add -u"
 git aliasconfig alias.ap "add -p"
 git aliasconfig alias.rs "restore --staged"
 
