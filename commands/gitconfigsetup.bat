@@ -98,6 +98,14 @@ git aliasconfig alias.r-h-h "reset --hard HEAD"
 :: Discard working tree and move branch head to a specified commit
 git aliasconfig alias.r-h "reset --hard"
 
+:: ----------Tags-----------
+
+:: Create annotated tag
+git aliasconfig alias.t "tag -a"
+
+:: Push tags to origin
+git aliasconfig alias.pst "push origin --tags"
+
 :: ------Miscellaneous------
 
 :: Branch list by last commit
