@@ -119,9 +119,3 @@ git aliasconfig alias.r-to-head "reset --hard HEAD"
 
 :: Reset to a specific commit
 git aliasconfig alias.r-to-commit "reset --hard"
-
-:: Restore all staged files
-git aliasconfig alias.rs-all "restore --staged *"
-
-:: Restore all modified files
-git aliasconfig alias.r-all "restore *"
