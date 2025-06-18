@@ -29,6 +29,9 @@ git config --global diff.algorithm histogram
 :: Color moved lines (default is zebra)
 git config --global diff.colorMoved default
 
+:: Push new local branches to remote automatically
+git config --global push.autoSetupRemote true
+
 :: -------------------------
 :: ---------Aliases---------
 :: -------------------------
@@ -87,9 +90,6 @@ git aliasconfig alias.bl "branch --sort=-committerdate"
 
 :: Create new branch and switch to it
 git aliasconfig alias.swc "switch -c"
-
-:: Pushing a new branch
-git aliasconfig alias.psu "push -u origin"
 
 :: Restore staged changes to the working tree
 git aliasconfig alias.rs "restore --staged"
