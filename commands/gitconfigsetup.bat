@@ -3,21 +3,30 @@
 @echo off
 setlocal enabledelayedexpansion
 
+:: -------------------------
+:: --------Settings---------
+:: -------------------------
+
+:: Username and email
 if exist "..\config.bat" (
     call "..\config.bat"
     git config --global user.name "!GIT_USER_NAME!"
     git config --global user.email "!GIT_USER_EMAIL!"
 )
 
-:: -------------------------
-:: --------Settings---------
-:: -------------------------
-
-git config --global pull.ff only
-git config --global core.editor nano
-git config --global merge.conflictstyle zdiff3
 git config --global init.defaultBranch main
+git config --global core.editor nano
+
+:: Prevent fastforward when pulling
+git config --global pull.ff only
+
+:: https://www.ductile.systems/zdiff3/
+git config --global merge.conflictstyle zdiff3
+
+:: https://luppeng.wordpress.com/2020/10/10/when-to-use-each-of-the-git-diff-algorithms/
 git config --global diff.algorithm histogram
+
+:: Color moved lines (default is zebra)
 git config --global diff.colorMoved default
 
 :: -------------------------
