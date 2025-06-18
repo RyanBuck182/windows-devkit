@@ -90,6 +90,14 @@ git aliasconfig alias.sha "stash apply"
 git aliasconfig alias.ro "restore"
 git aliasconfig alias.ros "restore --staged"
 
+:: ----------Reset----------
+
+:: Discard working tree
+git aliasconfig alias.r-h-h "reset --hard HEAD"
+
+:: Discard working tree and move branch head to a specified commit
+git aliasconfig alias.r-h "reset --hard"
+
 :: ------Miscellaneous------
 
 :: Branch list by last commit
@@ -116,9 +124,3 @@ git aliasconfig alias.ap "add -p"
 
 :: Add files that are already tracked
 git aliasconfig alias.au "add -u"
-
-:: Reset to HEAD (the last commit)
-git aliasconfig alias.r-to-head "reset --hard HEAD"
-
-:: Reset to a specific commit
-git aliasconfig alias.r-to-commit "reset --hard"
