@@ -47,6 +47,7 @@ git aliasconfig alias.b "branch"
 git aliasconfig alias.f "fetch"
 git aliasconfig alias.pl "pull"
 git aliasconfig alias.ps "push"
+git aliasconfig alias.co "checkout"
 
 :: ---------Commit----------
 git aliasconfig alias.c "commit"
