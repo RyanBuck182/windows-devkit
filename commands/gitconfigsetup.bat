@@ -79,6 +79,10 @@ git aliasconfig alias.shps "stash push"
 git aliasconfig alias.shop "stash pop"
 git aliasconfig alias.sha "stash apply"
 
+:: Restore aliases
+git aliasconfig alias.ro "restore"
+git aliasconfig alias.ros "restore --staged"
+
 :: The following aliases are ordered roughly by the frequency that I use them
 
 :: Pull with merge/rebase
@@ -90,9 +94,6 @@ git aliasconfig alias.bl "branch --sort=-committerdate"
 
 :: Create new branch and switch to it
 git aliasconfig alias.swc "switch -c"
-
-:: Restore staged changes to the working tree
-git aliasconfig alias.rs "restore --staged"
 
 :: Prune remote tracking branches for remote branches that no longer exist
 git aliasconfig alias.fp "fetch --prune"
