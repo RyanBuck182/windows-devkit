@@ -73,6 +73,9 @@ git aliasconfig alias.ds "diff --staged"
 git aliasconfig alias.dc "diff --color-words"
 git aliasconfig alias.dsc "diff --staged --color-words"
 
+:: Diff between working tree and main
+git aliasconfig alias.dm "diff main"
+
 :: Diff between working tree and last commit
 git aliasconfig alias.dl "diff HEAD~1"
 
