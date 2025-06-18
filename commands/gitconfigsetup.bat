@@ -78,6 +78,7 @@ git aliasconfig alias.dsc "diff --staged --color-words"
 git aliasconfig alias.dm "diff main"
 
 :: Diff between working tree and last commit
+:: Useful for checking the changes of the commit you just made
 git aliasconfig alias.dl "diff HEAD~1"
 
 :: ----------Stash----------
