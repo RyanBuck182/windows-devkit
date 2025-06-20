@@ -70,16 +70,15 @@ git aliasconfig alias.l "log --oneline"
 git aliasconfig alias.lg "log --oneline --graph"
 
 :: -----------Diff----------
-git aliasconfig alias.ds "diff --staged"
 git aliasconfig alias.dc "diff --color-words"
+git aliasconfig alias.ds "diff --staged"
 git aliasconfig alias.dsc "diff --staged --color-words"
-
-:: Diff between working tree and main
+git aliasconfig alias.dh "diff HEAD"
+git aliasconfig alias.dhc "diff HEAD --color-words"
 git aliasconfig alias.dm "diff main"
-
-:: Diff between working tree and last commit
-:: Useful for checking the changes of the commit you just made
+git aliasconfig alias.dmc "diff main --color-words"
 git aliasconfig alias.dl "diff HEAD~1"
+git aliasconfig alias.dlc "diff HEAD~1 --color-words"
 
 :: ----------Stash----------
 git aliasconfig alias.sh "stash"
