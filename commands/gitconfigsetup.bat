@@ -93,12 +93,10 @@ git aliasconfig alias.ro "restore"
 git aliasconfig alias.ros "restore --staged"
 
 :: ----------Reset----------
-
-:: Discard working tree
-git aliasconfig alias.r-h-h "reset --hard HEAD"
-
-:: Discard working tree and move branch head to a specified commit
+:: Purposely made to not be super convenient to type
 git aliasconfig alias.r-h "reset --hard"
+git aliasconfig alias.r-h-h "reset --hard HEAD"
+git aliasconfig alias.r-h-l "reset --hard HEAD~"
 
 :: ----------Tags-----------
 
