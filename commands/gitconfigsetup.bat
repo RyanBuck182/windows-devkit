@@ -67,7 +67,13 @@ git aliasconfig alias.rbi "rebase -i"
 
 :: -----------Log-----------
 git aliasconfig alias.l "log --oneline"
+git aliasconfig alias.lt "log --oneline -10"
+git aliasconfig alias.ltw "log --oneline -20"
+git aliasconfig alias.lth "log --oneline -30"
 git aliasconfig alias.lg "log --oneline --graph"
+git aliasconfig alias.ltg "log --oneline -10 --graph"
+git aliasconfig alias.ltwg "log --oneline -20 --graph"
+git aliasconfig alias.lthg "log --oneline -30 --graph"
 
 :: -----------Diff----------
 git aliasconfig alias.dc "diff --color-words"
