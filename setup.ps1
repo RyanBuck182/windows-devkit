@@ -1,5 +1,5 @@
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-$commandsDir = Join-Path $scriptDir "commands"
+$commandsDir = Join-Path $scriptDir "bat-commands"
 $currentPATH = [Environment]::GetEnvironmentVariable("PATH", "User")
 
 # Add the commands to the PATH environment variable
