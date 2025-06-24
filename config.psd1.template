@@ -1,0 +1,7 @@
+@{
+    # Duplicate the file, remove the .template from the end of the file name,
+    # then change the following values:
+
+    GitUserName = "YOUR GIT USERNAME"
+    GitUserEmail = "YOUR GIT EMAIL"
+}
