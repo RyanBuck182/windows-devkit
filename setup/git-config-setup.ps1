@@ -1,11 +1,10 @@
 # My preferred configuration options for git.
 
+Write-Output "Setting git config..."
+
 # -------------------------
 # --------Settings---------
 # -------------------------
-
-
-Write-Output "Setting git config..."
 
 # Username and email
 if (Test-Path "..\config.psd1") {
