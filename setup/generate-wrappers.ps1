@@ -29,7 +29,7 @@ Get-ChildItem -Path $commandDir -Filter *.ps1 | ForEach-Object {
     Set-Content -Path $wrapperPath -Value $wrapperContent
 }
 
-# Have to do something special for exit cause it's a keyword not a command
+# Have to do something special for xx cause exit is a keyword not a command
 Set-Content -Path (Join-Path $wrapperDir "xx.bat") -Value @"
 :: Alias for exit
 @echo off
