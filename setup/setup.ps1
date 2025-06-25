@@ -1,6 +1,12 @@
-Write-Host "Please follow the instructions in config.psd1.template"
-Write-Host "Once you have done so, please press enter..."
-Read-Host | Out-Null
+param (
+    [Alias('s', 'skip')][switch]$SkipConfigDialog
+)
+
+if (-not $SkipConfigDialog) {
+    Write-Host "Please follow the instructions in config.psd1.template"
+    Write-Host "Once you have done so, please press enter..."
+    Read-Host | Out-Null
+}
 
 Write-Host "Setting git config..."
 & (Join-Path $PSScriptRoot ".\git-config-setup.ps1")
