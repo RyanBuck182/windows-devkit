@@ -10,7 +10,7 @@ $functionDefs = @()
 foreach ($script in $commandScripts) {
     $functionDefs += @"
 function $($script.BaseName) {
-    & '$($script.FullName)'
+    & '$($script.FullName)' @args
 }
 "@
 }
