@@ -4,7 +4,7 @@ $commandDir = Join-Path $PSScriptRoot "..\ps-commands"
 $wrapperDir = Join-Path $PSScriptRoot "..\build\bat-wrappers"
 
 # Create dir if doesn't exist
-[System.IO.Directory]::CreateDirectory($wrapperDir)
+[System.IO.Directory]::CreateDirectory($wrapperDir) | Out-Null
 
 # Clear wrappers
 Get-ChildItem -Path $wrapperDir -File | Remove-Item
