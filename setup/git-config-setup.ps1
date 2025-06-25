@@ -5,7 +5,7 @@
 # -------------------------
 
 # Username and email
-if (Test-Path "..\config.psd1") {
+if (Test-Path (Join-Path $PSScriptRoot "..\config.psd1")) {
     $config = Import-PowerShellDataFile -Path "config.psd1"
     git config --global user.name $config.GitUserName
     git config --global user.email $config.GitUserEmail

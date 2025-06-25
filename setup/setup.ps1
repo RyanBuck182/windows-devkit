@@ -3,13 +3,15 @@ Write-Host "Once you have done so, please press enter..."
 Read-Host | Out-Null
 
 Write-Host "Setting git config..."
-& .\git-config-setup.ps1
+& (Join-Path $PSScriptRoot ".\git-config-setup.ps1")
 
-Write-Host "Adding commands to powershell profile..."
-& .\populate-profile.ps1
+Write-Host "`nAdding commands to powershell profile..."
+& (Join-Path $PSScriptRoot ".\populate-profile.ps1")
 
-Write-Host "Generating batch wrappers..."
-& .\generate-wrappers.ps1
+Write-Host "`nGenerating batch wrappers..."
+& (Join-Path $PSScriptRoot ".\generate-wrappers.ps1")
 
-Write-Host "Adding batch wrappers to the PATH environment variable..."
-& .\add-wrappers-to-path.ps1
+Write-Host "`nAdding batch wrappers to the PATH environment variable..."
+& (Join-Path $PSScriptRoot ".\add-wrappers-to-path.ps1")
+
+Write-Host "`nFinished!`n"
