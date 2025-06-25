@@ -1,2 +1,2 @@
 @echo off
-powershell -NoProfile -ExecutionPolicy Bypass -File "setup.ps1"
+powershell -ExecutionPolicy Bypass -File "setup.ps1"
