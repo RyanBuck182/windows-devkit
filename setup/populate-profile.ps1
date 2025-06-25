@@ -24,7 +24,7 @@ $beginMarker = "# BEGIN DEVKIT COMMAND INJECTION"
 $endMarker = "# END DEVKIT COMMAND INJECTION"
 $injectionBlock = @"
 $beginMarker
-& '$injectFile'
+. '$injectFile'
 function xx {
     exit
 }
