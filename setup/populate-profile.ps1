@@ -2,6 +2,9 @@ $commandDir = Join-Path $PSScriptRoot "..\ps-commands"
 $injectFile = Join-Path $PSScriptRoot "..\build\ps-profile\inject.ps1"
 $userProfile = $PROFILE.CurrentUserAllHosts
 
+# Create inject dir if doesn't exist
+[System.IO.Directory]::CreateDirectory((Split-Path -Path $injectFile -Parent)) | Out-Null
+
 # Exclude xx cause exit won't work from a script
 $commandScripts = Get-ChildItem -Path $commandDir -Filter "*.ps1" | Where-Object { $_.Name -notlike "xx.ps1" }
 
