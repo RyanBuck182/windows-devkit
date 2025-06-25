@@ -1,7 +1,5 @@
 # My preferred configuration options for git.
 
-Write-Output "Setting git config..."
-
 # -------------------------
 # --------Settings---------
 # -------------------------
