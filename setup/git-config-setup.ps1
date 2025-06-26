@@ -88,6 +88,11 @@ git aliasconfig alias.lhm "log --oneline HEAD..main"
 git aliasconfig alias.lbmh "log --oneline main...head"
 git aliasconfig alias.lbhm "log --oneline main...head"
 
+# ---------Switch----------
+# Create new branch and switch to it
+git aliasconfig alias.swc "switch -c"
+git aliasconfig alias.swm "switch main"
+
 # ----------Stash----------
 git aliasconfig alias.sh "stash"
 git aliasconfig alias.shs "stash show"
@@ -133,9 +138,6 @@ git aliasconfig alias.pst "push origin --tags"
 
 # Branch list by last commit
 git aliasconfig alias.bl "branch --sort=-committerdate"
-
-# Create new branch and switch to it
-git aliasconfig alias.swc "switch -c"
 
 # Show remotes
 git aliasconfig alias.rv "remote -v"
