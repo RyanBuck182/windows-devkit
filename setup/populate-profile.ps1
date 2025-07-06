@@ -22,15 +22,16 @@ function $($script.BaseName) {
 $injectContent = $functionDefs -join "`n"
 Set-Content -Path $injectFile -Value $injectContent
 
+# Get the extra injects (injects which are not generated from the ps-commands)
+$extraInjects = & (Join-Path $PSScriptRoot ".\profile-additions.ps1")
+
 # Add boundary markers to injection code
 $beginMarker = "# BEGIN DEVKIT COMMAND INJECTION"
 $endMarker = "# END DEVKIT COMMAND INJECTION"
 $injectionBlock = @"
 $beginMarker
 . '$injectFile'
-function xx {
-    exit
-}
+$extraInjects
 $endMarker
 "@
 
