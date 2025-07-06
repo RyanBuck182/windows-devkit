@@ -21,7 +21,7 @@ function prompt {
                     Write-Host "$branch" -ForegroundColor Cyan -NoNewline
                     Write-Host ")" -NoNewline
                 } else {
-                    Write-Host " [$branch]" -NoNewline
+                    Write-Host " ($branch)" -NoNewline
                 }
             }
         } catch {}
