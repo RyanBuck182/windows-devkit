@@ -1,5 +1,5 @@
-$commandDir = Join-Path $PSScriptRoot "..\resources\ps-commands"
-$injectFile = Join-Path $PSScriptRoot "..\build\ps-profile\inject.ps1"
+$commandDir = Join-Path $PSScriptRoot "..\ps-commands"
+$injectFile = Join-Path $PSScriptRoot "..\..\build\ps-profile\inject.ps1" | Resolve-Path
 $userProfile = $PROFILE.CurrentUserAllHosts
 
 # Create inject dir if doesn't exist

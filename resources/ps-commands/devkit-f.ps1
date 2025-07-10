@@ -1,3 +1,3 @@
 # Open the devkit in file explorer
 
-Start-Process (Get-Item $PSScriptRoot).Parent
+Start-Process (Get-Item $PSScriptRoot).Parent.Parent
