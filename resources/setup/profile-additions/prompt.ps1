@@ -1,4 +1,4 @@
-$Global:ShowPromptFull = $true
+$Global:ShowPromptFull = $false
 $Global:ShowPromptGit = $true
 $Global:ShowPromptColor = $true
 
