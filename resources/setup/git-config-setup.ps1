@@ -62,6 +62,7 @@ git aliasconfig alias.au "add -u"
 git aliasconfig alias.c "commit"
 git aliasconfig alias.cm "commit -m"
 git aliasconfig alias.ca "commit --amend"
+git aliasconfig alias.cam "commit --amend -m"
 
 # -----------Diff----------
 git aliasconfig alias.dc "diff --color-words"
