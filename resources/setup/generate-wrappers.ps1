@@ -29,9 +29,18 @@ Get-ChildItem -Path $commandDir -Filter *.ps1 | ForEach-Object {
     Set-Content -Path $wrapperPath -Value $wrapperContent
 }
 
+# TODO: Move everything following this to somewhere else
+
 # Have to do something special for xx cause exit is a keyword not a command
 Set-Content -Path (Join-Path $wrapperDir "xx.bat") -Value @"
 :: Alias for exit
 @echo off
+exit
+"@
+
+Set-Content -Path (Join-Path $wrapperDir "tpx.bat") -Value @"
+:: Alias for tp + exit
+@echo off
+tp
 exit
 "@

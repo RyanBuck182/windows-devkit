@@ -1,0 +1,4 @@
+function tpx {
+    tp
+    exit
+}
