@@ -98,6 +98,7 @@ git aliasconfig alias.swm "switch main"
 # ----------Stash----------
 git aliasconfig alias.sh "stash"
 git aliasconfig alias.shs "stash show"
+git aliasconfig alias.shl "stash list"
 git aliasconfig alias.shps "stash push"
 git aliasconfig alias.shop "stash pop"
 git aliasconfig alias.sha "stash apply"
