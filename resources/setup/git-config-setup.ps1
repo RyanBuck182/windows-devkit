@@ -131,9 +131,10 @@ git aliasconfig alias.r-h-l "reset --hard HEAD~"
 
 # ---------Bisect----------
 git aliasconfig alias.bs "bisect"
-git aliasconfig alias.bss "bisect start"
+git aliasconfig alias.bsst "bisect start"
 git aliasconfig alias.bsg "bisect good"
 git aliasconfig alias.bsb "bisect bad"
+git aliasconfig alias.bssk "bisect skip"
 git aliasconfig alias.bs-r "bisect reset"
 
 # ----------Tags-----------
