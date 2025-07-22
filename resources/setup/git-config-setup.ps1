@@ -134,6 +134,8 @@ git aliasconfig alias.bs "bisect"
 git aliasconfig alias.bsst "bisect start"
 git aliasconfig alias.bsg "bisect good"
 git aliasconfig alias.bsb "bisect bad"
+git aliasconfig alias.bso "bisect old"
+git aliasconfig alias.bsn "bisect new"
 git aliasconfig alias.bssk "bisect skip"
 git aliasconfig alias.bs-r "bisect reset"
 
