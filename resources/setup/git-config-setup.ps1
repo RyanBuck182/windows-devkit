@@ -77,13 +77,7 @@ git aliasconfig alias.dlc "diff HEAD~1 --color-words"
 
 # -----------Log-----------
 git aliasconfig alias.l "log --oneline"
-git aliasconfig alias.lt "log --oneline -10"
-git aliasconfig alias.ltw "log --oneline -20"
-git aliasconfig alias.lth "log --oneline -30"
 git aliasconfig alias.lg "log --oneline --graph"
-git aliasconfig alias.ltg "log --oneline -10 --graph"
-git aliasconfig alias.ltwg "log --oneline -20 --graph"
-git aliasconfig alias.lthg "log --oneline -30 --graph"
 
 git aliasconfig alias.lmh "log --oneline main..HEAD"
 git aliasconfig alias.lhm "log --oneline HEAD..main"
