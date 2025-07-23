@@ -14,14 +14,18 @@ function prompt {
     
     if ($Global:ShowPromptGit) {
         try {
-            $branch = git rev-parse --abbrev-ref HEAD 2>$null
-            if ($LASTEXITCODE -eq 0 -and $branch -ne 'HEAD') {
+            $position = git rev-parse --abbrev-ref HEAD 2>$null
+            if ($LASTEXITCODE -eq 0) {
+                if ($position -eq "HEAD") {
+                    $position = (git rev-parse HEAD 2>$null).Substring(0, 7)
+                }
+
                 if ($Global:ShowPromptColor) {
                     Write-Host " (" -NoNewline
-                    Write-Host "$branch" -ForegroundColor Cyan -NoNewline
+                    Write-Host "$position" -ForegroundColor Cyan -NoNewline
                     Write-Host ")" -NoNewline
                 } else {
-                    Write-Host " ($branch)" -NoNewline
+                    Write-Host " ($position)" -NoNewline
                 }
             }
         } catch {}
