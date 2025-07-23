@@ -81,8 +81,6 @@ git aliasconfig alias.lg "log --oneline --graph"
 
 git aliasconfig alias.lmh "log --oneline main..HEAD"
 git aliasconfig alias.lhm "log --oneline HEAD..main"
-git aliasconfig alias.lbmh "log --oneline main...head"
-git aliasconfig alias.lbhm "log --oneline main...head"
 
 # ---------Switch----------
 # Create new branch and switch to it
