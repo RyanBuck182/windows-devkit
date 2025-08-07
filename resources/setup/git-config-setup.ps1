@@ -78,14 +78,14 @@ git aliasconfig alias.dlc "diff HEAD~1 --color-words"
 
 # -----------Log-----------
 git aliasconfig alias.l "log --oneline"
-git aliasconfig alias.lf "log --oneline -5"
-git aliasconfig alias.lt "log --oneline -10"
-git aliasconfig alias.lft "log --oneline -15"
+git aliasconfig alias.l5 "log --oneline -5"
+git aliasconfig alias.l10 "log --oneline -10"
+git aliasconfig alias.l15 "log --oneline -15"
 
 git aliasconfig alias.lg "log --oneline --graph"
-git aliasconfig alias.lfg "log --oneline --graph -5"
-git aliasconfig alias.ltg "log --oneline --graph -10"
-git aliasconfig alias.lftg "log --oneline --graph -15"
+git aliasconfig alias.lg5 "log --oneline --graph -5"
+git aliasconfig alias.lg10 "log --oneline --graph -10"
+git aliasconfig alias.lg15 "log --oneline --graph -15"
 
 git aliasconfig alias.lmh "log --oneline main..HEAD"
 git aliasconfig alias.lhm "log --oneline HEAD..main"
