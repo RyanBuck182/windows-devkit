@@ -87,7 +87,10 @@ git aliasconfig alias.lg5 "log --oneline --graph -5"
 git aliasconfig alias.lg10 "log --oneline --graph -10"
 git aliasconfig alias.lg15 "log --oneline --graph -15"
 
+# In HEAD but not main
 git aliasconfig alias.lmh "log --oneline main..HEAD"
+
+# In main but not HEAD
 git aliasconfig alias.lhm "log --oneline HEAD..main"
 
 # ---------Switch----------
