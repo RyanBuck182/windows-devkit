@@ -18,7 +18,8 @@ if (Test-Path $configPath) {
 git config --global init.defaultBranch main
 git config --global core.editor nano
 
-# Prevent fastforward when pulling
+# Only pull if fastforward is possible
+# Can use plm or plr alias if not
 git config --global pull.ff only
 
 # https://www.ductile.systems/zdiff3/
