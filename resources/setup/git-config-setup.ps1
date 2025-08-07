@@ -110,9 +110,9 @@ git aliasconfig alias.mga "merge --abort"
 # ---------Rebase----------
 git aliasconfig alias.rb "rebase"
 git aliasconfig alias.rbo "rebase --onto"
+git aliasconfig alias.rbi "rebase -i"
 git aliasconfig alias.rbc "rebase --continue"
 git aliasconfig alias.rba "rebase --abort"
-git aliasconfig alias.rbi "rebase -i"
 
 # ----------Pull-----------
 # Pull with merge/rebase
