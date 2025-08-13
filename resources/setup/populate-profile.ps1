@@ -38,6 +38,7 @@ $endMarker
 # Get profile content
 if (Test-Path $userProfile) {
     $profileContent = Get-Content $userProfile -Raw
+    if ($profileContent -eq $null) { $profileContent = "" }
 } else {
     $profileContent = ""
 }
