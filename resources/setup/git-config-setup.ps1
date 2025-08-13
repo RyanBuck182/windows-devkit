@@ -66,15 +66,10 @@ git aliasconfig alias.ca "commit --amend"
 git aliasconfig alias.cam "commit --amend -m"
 
 # -----------Diff----------
-git aliasconfig alias.dc "diff --color-words"
 git aliasconfig alias.ds "diff --staged"
-git aliasconfig alias.dsc "diff --staged --color-words"
 git aliasconfig alias.dh "diff HEAD"
-git aliasconfig alias.dhc "diff HEAD --color-words"
 git aliasconfig alias.dm "diff main"
-git aliasconfig alias.dmc "diff main --color-words"
 git aliasconfig alias.dl "diff HEAD~1"
-git aliasconfig alias.dlc "diff HEAD~1 --color-words"
 
 # -----------Log-----------
 git aliasconfig alias.l "log --oneline"
