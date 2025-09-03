@@ -131,6 +131,9 @@ git aliasconfig alias.b "branch"
 # Branch list by last commit
 git aliasconfig alias.bl "branch --sort=-committerdate"
 
+# Branch list but only the branches that contain a given commit
+git aliasconfig alias.blc "branch --sort=-committerdate --contains"
+
 # ---------Restore---------
 git aliasconfig alias.ro "restore"
 git aliasconfig alias.ros "restore --staged"
