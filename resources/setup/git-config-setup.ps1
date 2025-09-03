@@ -127,6 +127,7 @@ git aliasconfig alias.plr "-c pull.ff=true pull --rebase"
 # ---------Branch----------
 
 git aliasconfig alias.b "branch"
+git aliasconfig alias.b-d "branch -D"
 
 # Branch list by last commit
 git aliasconfig alias.bl "branch --sort=-committerdate"
