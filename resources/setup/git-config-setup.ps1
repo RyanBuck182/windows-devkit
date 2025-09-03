@@ -45,7 +45,6 @@ git aliasconfig alias.s "status"
 git aliasconfig alias.a "add"
 git aliasconfig alias.d "diff"
 git aliasconfig alias.sw "switch"
-git aliasconfig alias.b "branch"
 git aliasconfig alias.f "fetch"
 git aliasconfig alias.pl "pull"
 git aliasconfig alias.ps "push"
@@ -125,6 +124,13 @@ git aliasconfig alias.rba "rebase --abort"
 git aliasconfig alias.plm "-c pull.ff=true pull"
 git aliasconfig alias.plr "-c pull.ff=true pull --rebase"
 
+# ---------Branch----------
+
+git aliasconfig alias.b "branch"
+
+# Branch list by last commit
+git aliasconfig alias.bl "branch --sort=-committerdate"
+
 # ---------Restore---------
 git aliasconfig alias.ro "restore"
 git aliasconfig alias.ros "restore --staged"
@@ -154,9 +160,6 @@ git aliasconfig alias.t "tag -a"
 git aliasconfig alias.pst "push origin --tags"
 
 # ------Miscellaneous------
-
-# Branch list by last commit
-git aliasconfig alias.bl "branch --sort=-committerdate"
 
 # Show remotes
 git aliasconfig alias.rv "remote -v"
