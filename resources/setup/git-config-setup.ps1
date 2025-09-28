@@ -145,6 +145,10 @@ git aliasconfig alias.r-h "reset --hard"
 git aliasconfig alias.r-h-h "reset --hard HEAD"
 git aliasconfig alias.r-h-l "reset --hard HEAD~"
 
+# ---------Remote----------
+git aliasconfig alias.rv "remote -v"
+git aliasconfig alias.rsu "remote set-url"
+
 # ---------Bisect----------
 git aliasconfig alias.bs "bisect"
 git aliasconfig alias.bsst "bisect start"
@@ -164,9 +168,6 @@ git aliasconfig alias.t "tag -a"
 git aliasconfig alias.pst "push origin --tags"
 
 # ------Miscellaneous------
-
-# Show remotes
-git aliasconfig alias.rv "remote -v"
 
 # Prune remote tracking branches for remote branches that no longer exist
 git aliasconfig alias.fp "fetch --prune"
