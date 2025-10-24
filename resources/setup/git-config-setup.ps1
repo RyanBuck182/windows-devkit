@@ -124,6 +124,9 @@ git aliasconfig alias.rba "rebase --abort"
 git aliasconfig alias.plm "-c pull.ff=true pull"
 git aliasconfig alias.plr "-c pull.ff=true pull --rebase"
 
+# Pull from main and merge
+git aliasconfig alias.plomm "-c pull.ff=true pull origin main"
+
 # ---------Branch----------
 
 git aliasconfig alias.b "branch"
