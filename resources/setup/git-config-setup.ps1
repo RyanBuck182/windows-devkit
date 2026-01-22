@@ -70,12 +70,12 @@ git aliasconfig alias.dh "diff HEAD"
 git aliasconfig alias.dm "diff main"
 git aliasconfig alias.dl "diff HEAD~1"
 
-# Only the names of the files that changed
-git aliasconfig alias.df "diff --name-only"
-git aliasconfig alias.dsf "diff --staged --name-only"
-git aliasconfig alias.dhf "diff HEAD --name-only"
-git aliasconfig alias.dmf "diff main --name-only"
-git aliasconfig alias.dlf "diff HEAD~1 --name-only"
+# Only the names and statuses of the files that changed
+git aliasconfig alias.df "diff --name-status"
+git aliasconfig alias.dsf "diff --staged --name-status"
+git aliasconfig alias.dhf "diff HEAD --name-status"
+git aliasconfig alias.dmf "diff main --name-status"
+git aliasconfig alias.dlf "diff HEAD~1 --name-status"
 
 # -----------Log-----------
 git aliasconfig alias.l "log --oneline"
