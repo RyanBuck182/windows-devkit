@@ -183,4 +183,4 @@ git aliasconfig alias.cfd "clean -fd"
 
 # List all aliases
 git aliasconfig alias.get-aliases "config --global --get-regexp ^alias\."
-git aliasconfig alias.ga "config --global --get-regexp ^alias\."
+git aliasconfig alias.ga "get-aliases"
