@@ -136,7 +136,7 @@ git aliasconfig alias.b-d "branch -D"
 git aliasconfig alias.bl "branch --sort=-committerdate"
 
 # List of fully-merged branches by last commit
-git aliasconfig alias.blm "branch --sort=-committerdate"
+git aliasconfig alias.blm "branch --sort=-committerdate --merged"
 
 # Branch list but only the branches that contain a given commit
 git aliasconfig alias.blc "branch --sort=-committerdate --contains"
