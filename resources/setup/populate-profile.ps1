@@ -43,6 +43,7 @@ if (Test-Path $userProfile) {
     $profileContent = Get-Content $userProfile -Raw
     if ($profileContent -eq $null) { $profileContent = "" }
 } else {
+    New-Item -Path $userProfile -Type "file" -Force | Out-Null
     $profileContent = ""
 }
 
