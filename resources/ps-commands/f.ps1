@@ -1,3 +1,7 @@
-# Open a new file explorer window from the current directory.
+# Open a new file explorer window at a specified directory.
 
-Start-Process .
+param (
+    [string]$Path = "."
+)
+
+Start-Process (Resolve-Path $Path)
