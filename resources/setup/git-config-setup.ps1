@@ -143,7 +143,10 @@ git aliasconfig alias.blc "branch --sort=-committerdate --contains"
 
 # ---------Restore---------
 git aliasconfig alias.ro "restore"
+git aliasconfig alias.rop "restore --patch"
+
 git aliasconfig alias.ros "restore --staged"
+git aliasconfig alias.rosp "restore --staged --patch"
 
 # ----------Reset----------
 # Purposely made to not be super convenient to type
