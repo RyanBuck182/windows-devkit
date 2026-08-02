@@ -34,6 +34,9 @@ git config --global diff.colorMoved "default"
 # Push new local branches to remote automatically
 git config --global push.autoSetupRemote true
 
+# Don't automatically change LF to CRLF
+git config --global core.autocrlf false
+
 # -------------------------
 # ---------Aliases---------
 # -------------------------
